@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    width: 95vw;
+    height: 95vh;
 }
 .wrapper{
     margin: 10px;
 }
-.wrapper:hover .flipper,
+/* .wrapper:hover .flipper, */
 .wrapper.voltear .flipper{
     transform: rotateY(180deg);
     cursor: pointer;
@@ -39,4 +39,13 @@
     
     background-color: lightcoral;
     transform: rotateY(180deg);
+}
+.icon{
+    width: 110%;
+}
+.back-circle{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
