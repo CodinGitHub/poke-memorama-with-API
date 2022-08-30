@@ -1,0 +1,17 @@
+@startmindmap Actores
+title Actores
+* Actores
+** Preparadores
+***_ Tipos
+**** Preparadores alojados en CHS
+**** Preparadores no alojdos en CHS
+***** Usa mantenedor de caballos
+***_ Encargado de
+**** Realizar inscripciones
+** Operador
+***_ Encargado de
+**** Supervigila la operación
+** Encargado de sistema
+***_ Encargado de
+**** Configuraciones y monitoreo de sistema
+@endmindmap

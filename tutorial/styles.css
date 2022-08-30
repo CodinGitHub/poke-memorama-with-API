@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 95vh;
+}
+
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+.wrapper{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    display: inline-table;
+}
+.wrapper:hover{
+    cursor: pointer;
+}
+/* .wrapper:hover .flipper, */
+.wrapper.voltear .flipper{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.flipper{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.frente, .atras{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frente{
+    background-color: lightblue;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.atras{
+    
+    background-color: lightcoral;
+    transform: rotateY(180deg);
+}
+.icon{
+    width: 110%;
+}
+.back-circle{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
