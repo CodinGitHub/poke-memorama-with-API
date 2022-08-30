@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  align-items: center; /* centrado vertical*/
+  justify-content: center; /* centrado horizontal*/
+  /* display: grid;
+  place-content: center; */
+}
+
+#gameBoard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 460px;
+}
+
+.tile {
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
