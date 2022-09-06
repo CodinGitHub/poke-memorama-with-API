@@ -1,0 +1,9 @@
+.header{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    &__config:hover{
+        cursor: pointer;
+    }
+}

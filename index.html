@@ -5,28 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/003962264f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
     <title>PokeMemorama</title>
 </head>
 <body>
+    <header class="header">
+        <p class="header__level">Nivel: Novato</p>
+        <p class="header__time">Tiempo: 30 seg</p>
+        <i class="header__config fa-solid fa-gear fa-2xl"></i>
+    </header>
+    <section id="gameBoard">
+        <div class="card">
+            <div class="card__front"></div>
+            <div class="card__back"></div>
+        </div>
+        <div class="card">
+            <div class="card__front"></div>
+            <div class="card__back"></div>
+        </div>
+        <div class="card">
+            <div class="card__front"></div>
+            <div class="card__back"></div>
+        </div>
+        <div class="card">
+            <div class="card__front"></div>
+            <div class="card__back"></div>
+        </div>
+    </section>
 
-    <div id="gameBoard">
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-    </div>
+    <section class="btn-container">
+        <button class="btn-start">Start Game</button>
+    </section>
+    <section class="players" >
+        <div class="players__player">Player 1 (10)</div>
+        <div class="players__player">Player 2 (8)</div>
+        <div class="players__player">Player 3 (5)</div>
+        <div class="players__player">Player 4 (7)</div>
+    </section>
+
+    <!-- inicio modal config -->
+    <p>Numero de jugadores</p>
+
+
+    
+    <input id="onePlayer" type="radio" name="numero">
+    <label for="onePlayer">Uno</label>
+
+    <input id="twoPlayer" type="radio" name="numero">
+    <label for="twoPlayer">Dos</label>
+
+    <input id="threePlayer" type="radio" name="numero">
+    <label for="threePlayer">Tres</label>
+
+    <input id="player" type="radio" name="">
+    <label for="player">Un jugador</label>
+
+
+    <!-- final modal config -->
+
+
+
+
+
+
     <script src="./main.js"></script>
 </body>
 </html>
