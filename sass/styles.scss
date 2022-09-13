@@ -1,6 +1,10 @@
 @use 'header';
 @use 'mixins';
 @use 'players';
+@use 'badge';
+@use 'modal-config';
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 // @import "./node_modules/nes.css/css/nes.css";
 
@@ -10,8 +14,7 @@
 }
 
 body{
-    /* display: grid;
-    place-content: center; */
+    font-family: 'Press Start 2P', cursive;
 }
 
 
@@ -19,11 +22,13 @@ body{
 #gameBoard{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    width: 460px;
-    width: 99vw;
-    border: 2px solid gray;
-    height: 60vh;
+    gap: 0px 20px;
+    // border: 1px solid red;
+    width: 750px;
+    height: 580px;
+    margin: 0 auto 30px;
+    // width: 99vw;
+    // height: 60vh;
     display: flex;
     align-items: center; /* centrado vertical*/
     justify-content: center; /* centrado horizontal*/

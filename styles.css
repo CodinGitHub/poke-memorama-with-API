@@ -1,22 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .header {
   display: flex;
   height: 50px;
   align-items: center;
   justify-content: space-around;
-}
-.header__config:hover {
-  cursor: pointer;
+  margin-top: 30px;
 }
 
 .players {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  margin-top: 30px;
 }
 .players__player {
-  border: 1px solid red;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nes-badge {
+  width: 16.5em;
+}
+
+.nes-badge.is-splited span.is-dark:first-child {
+  width: 70%;
+}
+
+.nes-badge.is-splited span.is-success:last-child {
+  width: 30%;
+}
+
+.dialog-menu {
+  text-align: right;
+}
+
+.nes-dialog {
+  margin: 15% auto;
 }
 
 * {
@@ -25,18 +47,16 @@
 }
 
 body {
-  /* display: grid;
-  place-content: center; */
+  font-family: "Press Start 2P", cursive;
 }
 
 #gameBoard {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  width: 460px;
-  width: 99vw;
-  border: 2px solid gray;
-  height: 60vh;
+  gap: 0px 20px;
+  width: 750px;
+  height: 580px;
+  margin: 0 auto 30px;
   display: flex;
   align-items: center; /* centrado vertical*/
   justify-content: center; /* centrado horizontal*/

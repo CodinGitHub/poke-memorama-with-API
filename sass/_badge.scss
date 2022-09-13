@@ -1,0 +1,9 @@
+.nes-badge{
+    width: 16.5em;
+}
+.nes-badge.is-splited span.is-dark:first-child{
+    width: 70%;
+}
+.nes-badge.is-splited span.is-success:last-child{
+    width: 30%;
+}

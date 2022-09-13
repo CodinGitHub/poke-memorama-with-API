@@ -4,51 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/003962264f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link href="https://unpkg.com/nes.css@2.2.0/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
     <title>PokeMemorama</title>
 </head>
 <body>
     <header class="header">
         <p class="header__level">Nivel: Novato</p>
         <p class="header__time">Tiempo: 30 seg</p>
-        <i class="header__config fa-solid fa-gear fa-2xl"></i>
+        <i id="configBtn" class="header__config snes-jp-logo nes-pointer" ></i>
     </header>
     <section id="gameBoard">
-        <div class="card">
+        <!-- <div class="card">
             <div class="card__front"></div>
             <div class="card__back"></div>
-        </div>
-        <div class="card">
-            <div class="card__front"></div>
-            <div class="card__back"></div>
-        </div>
-        <div class="card">
-            <div class="card__front"></div>
-            <div class="card__back"></div>
-        </div>
-        <div class="card">
-            <div class="card__front"></div>
-            <div class="card__back"></div>
-        </div>
+        </div> -->
+        
+    </section>
+    
+    <section class="btn-container">
+        <button class="btn-start nes-btn is-warning">Start Game</button>
     </section>
 
-    <section class="btn-container">
-        <button class="btn-start">Start Game</button>
-    </section>
+    <!-- Contenedor de los jugadores -->
     <section class="players" >
-        <div class="players__player">Player 1 (10)</div>
-        <div class="players__player">Player 2 (8)</div>
-        <div class="players__player">Player 3 (5)</div>
-        <div class="players__player">Player 4 (7)</div>
+        
+        <div class="players__player">
+            <div class="nes-bulbasaur"></div>
+            <a href="#" class="nes-badge is-splited">
+                <span class="is-dark">Player 1</span>
+                <span class="is-success">3</span>
+            </a>
+        </div>
+        <div class="players__player">
+            <div class="nes-charmander"></div>
+            <a href="#" class="nes-badge is-splited">
+                <span class="is-dark">Player 2</span>
+                <span class="is-success">10</span>
+            </a>
+        </div>
+        
     </section>
 
     <!-- inicio modal config -->
-    <p>Numero de jugadores</p>
+
+    <section>
+        <!-- <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-rounded').showModal();">
+          Open rounded dialog
+        </button> -->
+        <dialog class="nes-dialog is-rounded" id="dialog-rounded">
+          <form id="configForm" method="dialog">
+            <!-- inicio ballon -->
+            <div class="nes-balloon from-left">
+                <p>NUMERO DE JUGADORES:</p>
+                <label>
+                    <input type="radio" class="nes-radio" name="players" value="1" checked />
+                    <span>Uno</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="players" value="2" />
+                    <span>Dos</span>
+                </label>
+
+                <p>DIFICULTAD:</p>
+                <label>
+                    <input type="radio" class="nes-radio" name="level" value="novato" checked />
+                    <span>Novato</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="level" value="intermedio" />
+                    <span>Intermedio</span>
+                </label>
+                <label>
+                    <input type="radio" class="nes-radio" name="level" value="avanzado" />
+                    <span>Avanzado</span>
+                </label>
+                
+            </div>
+            <!-- fin ballon -->
+            <div>
+                <p class="nes-ash"></p>
+            </div>
+
+            <div class="dialog-menu">
+              <button class="nes-btn">Cancel</button>
+              <button id="confirmBtn" class="nes-btn is-primary">Confirm</button>
+            </div>
+          </form>
+        </dialog>
+      </section>
 
 
-    
+
+    <!-- <p>Numero de jugadores</p>
+
     <input id="onePlayer" type="radio" name="numero">
     <label for="onePlayer">Uno</label>
 
@@ -59,7 +110,7 @@
     <label for="threePlayer">Tres</label>
 
     <input id="player" type="radio" name="">
-    <label for="player">Un jugador</label>
+    <label for="player">Un jugador</label> -->
 
 
     <!-- final modal config -->
