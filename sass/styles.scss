@@ -23,7 +23,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 0px 20px;
-    border: 2px solid red;
     width: 500px;
     height: 420px;
     margin: 0 auto 30px;
@@ -86,7 +85,8 @@ body{
     }  
 }
 .btn-container{
-    text-align: center
+    text-align: center;
+    margin: 180px 0;
 }
 .btn-start{
     @include mixins.button;

@@ -11,7 +11,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
+  width: 600px;
+  margin: 30px auto;
 }
 .players__player {
   padding: 10px;
@@ -54,7 +55,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0px 20px;
-  border: 2px solid red;
   width: 500px;
   height: 420px;
   margin: 0 auto 30px;
@@ -106,6 +106,7 @@ body {
 
 .btn-container {
   text-align: center;
+  margin: 180px 0;
 }
 
 .btn-start {
